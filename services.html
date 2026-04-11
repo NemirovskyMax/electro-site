@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Электрик 24/7 Услуги</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="index.html" class="logo">
+				<img src="images/logo.webp" alt="логотип">
+			</a>
+
+			<nav class="menu">
+				<a href="#">Услуги</a>
+				<a href="index.html#features">О нас</a>
+				<a href="index.html#footer">Контакты</a>
+			</nav>
+
+			<div class="contacts">
+				<a href="tel:+37377539078" class="call-btn">Позвонить</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="services-page">
+		<div class="container">
+
+			<div class="services-header">
+				<h1 class="section-title">Полный перечень <span>услуг</span></h1>
+				<p class="service-subtitle">Работаем по Тирасполю, Бендерам и ближайшим населенным пунктам</p>
+			</div>
+
+			<div class="services-grid-new">
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/instal-socket.png" alt="Розетки">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">01</div>
+						<h3>Розетки и выключатели</h3>
+						<p>Монтаж новых точек питания, перенос старых и замена механизмов в любых типах стен.</p>
+
+						<ul class="card-features">
+							<li>Штробление бетонных и кирпичных стен</li>
+							<li>Монтаж скрытой и наружной проводки</li>
+							<li>Установка проходных выключателей</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 45 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/instal-lamp.png" alt="Освещение и подсветка">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">02</div>
+						<h3>Освещение и подсветка</h3>
+						<p>Создаем комфортную атмосферу в доме. От классических люстр до современных трековых систем и
+							декоративной LED-подсветки.</p>
+
+						<ul class="card-features">
+							<li>Сборка и навеска сложных люстр</li>
+							<li>Монтаж трековых и точечных светильников</li>
+							<li>Установка контурной диодной подсветки</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 80 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/turnkey-wiring.png" alt="Электромонтаж под ключ">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">03</div>
+						<h3>Электромонтаж под ключ</h3>
+						<p>Комплексное решение для квартир, домов и офисов. От проектирования схемы нагрузок до чистовой
+							установки фурнитуры.</p>
+
+						<ul class="card-features">
+							<li>Полная замена старой проводки</li>
+							<li>Разводка по потолку или в стяжке</li>
+							<li>Монтаж негорючего кабеля (ВВГнг-LS)</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 2500 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/emergency-call.png" alt="Аварийный выезд электрика">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">04</div>
+						<h3>Аварийный выезд</h3>
+						<p>Срочное устранение неисправностей: короткие замыкания, запах гари, искрение в щитке или
+							полное отсутствие света в квартире.</p>
+
+						<ul class="card-features">
+							<li>Приезд в течение 30-60 минут</li>
+							<li>Поиск и устранение обрывов цепи</li>
+							<li>Замена сгоревших автоматов и УЗО</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 130 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/wiring-install.png" alt="Монтаж и замена проводки">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">05</div>
+						<h3>Монтаж и замена проводки</h3>
+						<p>Профессиональное устройство электросети с нуля. Рассчитываем нагрузки, подбираем правильное
+							сечение кабеля и гарантируем отсутствие перегревов.</p>
+
+						<ul class="card-features">
+							<li>Демонтаж старой алюминиевой проводки</li>
+							<li>Разводка линий по стенам, полу или потолку</li>
+							<li>Штробление без пыли с использованием пылесоса</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 4000 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/troubleshooting.png" alt="Поиск и устранение неисправностей">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">06</div>
+						<h3>Поиск и устранение неисправностей</h3>
+						<p>Диагностика электропроводки любой сложности. Находим скрытые дефекты, которые могут привести
+							к возгоранию или порче бытовой техники.</p>
+
+						<ul class="card-features">
+							<li>Поиск скрытых обрывов и коротких замыканий</li>
+							<li>Устранение причин «выбивания» автоматов</li>
+							<li>Проверка надежности контактов и соединений</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 300 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/solar-panel.png" alt="Солнечные электростанции">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">07</div>
+						<h3>Солнечные электростанции</h3>
+						<p>Проектирование и монтаж автономных и гибридных систем. Помогаем добиться полной независимости
+							от городских сетей и экономить на счетах.</p>
+
+						<ul class="card-features">
+							<li>Установка солнечных панелей на крышу и грунт</li>
+							<li>Настройка инверторов и систем мониторинга</li>
+							<li>Подбор и подключение АКБ для резервного питания</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">Цена после расчёта</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/electrical-panel.png" alt="Щиты и автоматика">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">08</div>
+						<h3>Щиты и автоматика</h3>
+						<p>Профессиональная сборка распределительных щитов с защитой от скачков напряжения, перегрузок и
+							поражения током.</p>
+
+						<ul class="card-features">
+							<li>Установка реле напряжения и УЗО</li>
+							<li>Маркировка линий и аккуратный кабель-менеджмент</li>
+							<li>Сборка щитов для "Умного дома"</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 800 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/camera.png" alt="Видеонаблюдение и домофония">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">09</div>
+						<h3>Видеонаблюдение и домофония</h3>
+						<p>Ваша безопасность под контролем. Устанавливаем системы удаленного наблюдения и современные
+							домофоны с управлением со смартфона.</p>
+
+						<ul class="card-features">
+							<li>Монтаж IP и аналоговых камер (внутренние/уличные)</li>
+							<li>Установка видеодомофонов и электрозамков</li>
+							<li>Настройка удаленного доступа на телефон и планшет</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 350 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/electric-underfloor-heating.png" alt="Электрический теплый пол">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">10</div>
+						<h3>Электрический теплый пол</h3>
+						<p>Комфорт в вашем доме в любое время года. Профессиональный монтаж нагревательных матов и
+							кабельных систем под любое напольное покрытие.</p>
+
+						<ul class="card-features">
+							<li>Укладка матов под плитку, ламинат или линолеум</li>
+							<li>Установка и настройка терморегуляторов</li>
+							<li>Проверка сопротивления и изоляции системы</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 120 руб./м²</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/connecting-household-appliances.png" alt="Подключение бытовой техники">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">11</div>
+						<h3>Подключение бытовой техники</h3>
+						<p>Безопасное подключение мощных электроприборов к сети. Прокладка отдельных линий с защитой,
+							чтобы техника служила долго.</p>
+
+						<ul class="card-features">
+							<li>Духовые шкафы и варочные панели</li>
+							<li>Бойлеры, стиральные и посудомоечные машины</li>
+							<li>Установка вытяжек и проточных водонагревателей</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 150 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="service-card-wide">
+
+					<div class="service-card-image">
+						<img src="images/modular-grounding.png" alt="Заземление и молниезащита">
+					</div>
+
+					<div class="service-card-content">
+						<div class="card-number">12</div>
+						<h3>Заземление и молниезащита</h3>
+						<p>Защита вашего дома и техники от ударов молнии и утечек тока. Устанавливаем надежные контуры
+							заземления с проверкой сопротивления.</p>
+
+						<ul class="card-features">
+							<li>Монтаж модульно-штыревого заземления</li>
+							<li>Защита электроники от атмосферных разрядов</li>
+							<li>Выдача протоколов измерений (по запросу)</li>
+						</ul>
+
+						<div class="card-footer-new">
+							<span class="price-tag">от 1200 руб.</span>
+							<div class="card-buttons">
+								<button class="order-btn small" onclick="openModal()">Заказать</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="services-cta">
+				<h2>Не нашли нужную услугу в списке?</h2>
+				<p>Позвоните нам - мы решаем любые задачи по электрике, от замены лампочки до полной электрификации
+					крупных объектов</p>
+				<div class="cta-buttons">
+					<a href="tel:+37377539078" class="call-link-btn">Позвонить мастеру</a>
+					<button class="order-btn secondary" onclick="openModal()">Оставить заявку</button>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer-special" id="footer">
+		<div class="container">
+			<div class="footer-content-alt">
+				<span class="footer-tag">Доступен прямо сейчас</span>
+				<h2 class="footer-big-text">Нужен <span>надёжный</span> электрик?</h2>
+				<p class="footer-subtext">Хватит искать. Просто нажмите кнопку, и мы решим ваш вопрос сегодня.</p>
+
+				<div class="footer-action">
+					<button class="order-btn" onclick="openModal()">Заказать выезд</button>
+				</div>
+
+				<div class="footer-bottom-mini">
+					<div class="social-links-minimal">
+						<a href="https://t.me/+37377539078" target="_blank">Telegram</a>
+						<a href="https://wa.me/37377539078" target="_blank">WhatsApp</a>
+						<a href="viber://chat?number=%2B37377539078" target="_blank">Viber</a>
+					</div>
+					<div class="copyright">&copy; 2026 Тирасполь</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="modal-overlay" id="orderModal">
+		<div class="contact-dropdown">
+			<button class="close-modal" id="closeModal">&times;</button>
+
+			<h3>Выберите способ связи:</h3>
+
+			<div class="contact-links">
+				<a href="tel:+37377539078" class="contact-item tel">Телефон</a>
+				<a href="https://t.me/+37377539078" target="_blank" class="contact-item tg">Telegram</a>
+				<a href="https://wa.me/37377539078" target="_blank" class="contact-item wa">WhatsApp</a>
+				<a href="viber://chat?number=%2B37377539078" target="_blank" class="contact-item vb">Viber</a>
+			</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
